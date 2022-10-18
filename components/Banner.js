@@ -11,9 +11,9 @@ const Banner = () => {
             <Text style={styles.titleTopBanner}>Diabetes Care</Text>
         </View>
         <View>
-            <Image style={styles.imageBig} source = {require('../assets/images/hinh1.jpg')} />
+            <Image style={styles.imageBig} source = {require('../assets/images/Hinh1.png')} />
             <View style={styles.textOnImage}>
-              <Text>Save extra on every order</Text>
+              <Text style={styles.textOnImageTitle}>Save extra on every order</Text>
               <Text>Etiam mollis metus non faucibus sollicitudin. </Text>
             </View>
         </View>
@@ -29,8 +29,8 @@ const styles = StyleSheet.create({
   },
 
   imageBig: {
-    backgroundColor: "black",
-    opacity: 0.5,
+    // backgroundColor: "black",
+    // opacity: 0.5,
     width: 361,
     height: 203,
     margin: 14
@@ -38,15 +38,22 @@ const styles = StyleSheet.create({
 
   textOnImage: {
     position: 'absolute',
-    top: 30,
+    top: 50,
     left: 40,
+    width: 150,
   }, 
 
   textOnImageTitle: {
-    fontSize: 30,
-    display: "flex",
+    fontSize: 18,
     color: "#1987FB",
     fontWeight: "700",
+  },
+
+  textOnImageP: {
+    fontSize: 12,
+    color: "#1987FB",
+    fontWeight: "300",
+    color: "#090F47",
   },
 });
 

@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
 import Banner from './Banner';
+import DiabeticDiet from './DiabeticDiet';
 
 const Homepage = () => {
   return (
