@@ -4,12 +4,12 @@ import { FlatList, Text, View, StyleSheet, ScrollView, Image } from 'react-nativ
 const Item = ({ name, image }) => {
   return (
     <View style={styles.item}>
-      <Text style={{ color: 'black' }}>{name}</Text>
       <Image style={styles.imageCard} source={{uri: image}}/>
+      <Text style={styles.titleCard}>{name}</Text>
     </View>
   );
 }
-export default function CardDiabeticDiet() {
+export default function CardCreateCard() {
 
   const countries = [
     {
@@ -71,13 +71,9 @@ export default function CardDiabeticDiet() {
   );
 }
 const styles = StyleSheet.create({
-  container: {
-    marginTop: 30,
-    padding: 2,
-  },
   item: {
     backgroundColor: 'gray',
-    padding: 20,
+    padding: 10,
     marginVertical: 8,
     marginHorizontal: 10,
     borderRadius: 4,
@@ -87,5 +83,15 @@ const styles = StyleSheet.create({
   imageCard: {
     width: 100,
     height: 100,
+    marginBottom: 20,
+    borderRadius: 20,
+  },
+  titleCard: {
+    color: 'black',
+    fontSize: 13,
+    fontWeight: '400',
+    backgroundColor: '#F7E8C9',
+    borderRadius: 20,
+    padding: 5,
   }
 });

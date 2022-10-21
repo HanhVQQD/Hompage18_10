@@ -1,13 +1,14 @@
 
 import React from 'react';
 import { View, StyleSheet, Text, Button } from 'react-native';
+import CardAllProducts from './CardAllProduct';
 import CardCreateCard from './CardDiabeticDiet';
 
-const DiabeticDiet = () => {
+const AllProducts = () => {
   return (
     <View style={styles.cards}>
-        <Text style={styles.titleTopBanner}>Diabetic Diet</Text>
-        <CardCreateCard/>
+        <Text style={styles.titleTopBanner}>All Products</Text>
+        <CardAllProducts/>
     </View>
   );
 }
@@ -23,4 +24,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default DiabeticDiet;
+export default AllProducts;
