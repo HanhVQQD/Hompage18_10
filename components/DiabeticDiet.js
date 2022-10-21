@@ -1,17 +1,26 @@
 
 import React from 'react';
-import { View, StyleSheet, Text } from 'react-native';
+import { View, StyleSheet, Text, Button } from 'react-native';
+import CardCreateCard from './CardDiabeticDiet';
 
 const DiabeticDiet = () => {
   return (
-    <View>
-        <Text>Diabetic Diet</Text>
+    <View style={styles.cards}>
+        <Text style={styles.titleTopBanner}>Diabetic Diet</Text>
+        <CardCreateCard/>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  
+  cards: {
+    marginLeft: 14,
+    marginTop: 30,
+  },
+  titleTopBanner: {
+    fontSize: 16,
+    color: "red",
+  },
 });
 
 export default DiabeticDiet;

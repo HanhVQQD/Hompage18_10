@@ -5,7 +5,7 @@ import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 
 const Banner = () => {
   return (
-    <View>
+    <View style={styles.banner}>
         <View>
             <Icon name="home" size={24} color="black"/>
             <Text style={styles.titleTopBanner}>Diabetes Care</Text>
@@ -22,18 +22,25 @@ const Banner = () => {
 }
 
 const styles = StyleSheet.create({
+  banner: {
+    marginLeft: 16,
+  },
+
   topBanner: {
     justifyContent: "center",
     textAlign: "center",
     display: "flex", 
   },
 
+  titleTopBanner: {
+    fontSize: 16,
+    color: "red",
+  },
+  
   imageBig: {
-    // backgroundColor: "black",
-    // opacity: 0.5,
     width: 361,
     height: 203,
-    margin: 14
+    marginTop: 14,
   },
 
   textOnImage: {
@@ -53,7 +60,6 @@ const styles = StyleSheet.create({
     fontSize: 12,
     color: "#1987FB",
     fontWeight: "300",
-    color: "#090F47",
   },
 });
 
